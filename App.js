@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, StyleSheet, Text, View } from 'react-native'
+import { Button, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const obj=[
   {
@@ -43,6 +43,7 @@ const App = () => {
     <View>
       <Text style={styles.header}>Get started with react native</Text>
       <Text style={styles.label}>My name is PhanAnh</Text>
+
       <Text style={{ marginTop: 20, fontSize: 20 }}>List of friends</Text>
       <FlatList
         data={obj}
@@ -52,8 +53,12 @@ const App = () => {
             <Text style={{fontSize:20,color:'blue'}}>{item.name} - {item.age}</Text>
           )
         }}
-
       />
+
+      <Button title='login' onPress={()=>doSomeThing()}/>
+      <TouchableOpacity onPress={()=>doSomeThing()}>
+        <Text>CLICK</Text>
+      </TouchableOpacity>
     </View>
   )
 }
