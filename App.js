@@ -1,3 +1,6 @@
+/**
+ * How to use JSX, ES6, Flatlist, Button, TouchableOpacity
+ */
 import React from 'react'
 import { Button, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
